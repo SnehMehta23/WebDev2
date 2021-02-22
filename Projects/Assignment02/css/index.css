@@ -1,7 +1,15 @@
 @charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  height: 100%vh;
+}
+
 .navigation {
   height: 70px;
-  background: #262626;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 20px #625f79;
+          box-shadow: 0px 1px 20px #625f79;
 }
 
 .brand {
@@ -15,7 +23,7 @@
 
 .brand a,
 .brand a:visited {
-  color: #ffffff;
+  color: #625f79;
   text-decoration: none;
 }
 
@@ -44,15 +52,15 @@ nav ul li a:visited {
   display: block;
   padding: 0 20px;
   line-height: 70px;
-  background: #262626;
-  color: #ffffff;
+  background: #ffffff;
+  color: #625f79;
   text-decoration: none;
 }
 
 nav ul li a:hover,
 nav ul li a:visited:hover {
-  background: #a4c736;
-  color: #ffffff;
+  background: #afd181;
+  color: #625f79;
 }
 
 nav ul li a:not(:only-child):after,
@@ -135,7 +143,7 @@ nav ul li ul li a {
   border-radius: 1px;
   height: 5px;
   width: 35px;
-  background: #ffffff;
+  background: #625f79;
   position: absolute;
   display: block;
   content: "";
@@ -169,6 +177,11 @@ nav ul li ul li a {
           transform: rotate(-45deg);
 }
 
+main {
+  border: 1px solid white;
+  background-color: #afd181;
+}
+
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,10 +203,9 @@ nav ul li ul li a {
   max-width: 80%;
   height: 100%;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 50px;
   padding: 30px 0 30px;
   list-style: none;
-  border: 1px solid black;
 }
 
 .grid-item {
@@ -209,8 +221,8 @@ nav ul li ul li a {
           flex-grow: 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  -ms-flex-preferred-size: 300px;
-      flex-basis: 300px;
+  -ms-flex-preferred-size: 280px;
+      flex-basis: 280px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -220,13 +232,13 @@ nav ul li ul li a {
   border: 1px solid black;
   border-radius: 10%;
   position: relative;
-  height: 320px;
+  height: 300px;
   margin-right: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-size: 3rem;
   font-weight: 600;
   color: #ecf0f7;
-  background-color: white;
+  background-color: lightgray;
   cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */

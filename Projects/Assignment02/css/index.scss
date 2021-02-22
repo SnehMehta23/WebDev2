@@ -2,14 +2,21 @@
 $content-width: 1000px;
 $breakpoint: 799px;
 $nav-height: 70px;
-$nav-background: #262626;
-$nav-font-color: #ffffff;
-$link-hover-color: #a4c736;
+$nav-background: #ffffff;
+$nav-font-color: #625f79;
+$link-hover-color: #afd181;
+
+* {
+  padding: 0;
+  margin: 0;
+  height: 100%vh;
+}
 
 // Outer navigation wrapper
 .navigation {
   height: $nav-height;
   background: $nav-background;
+  box-shadow: 0px 1px 20px #625f79;
 }
 
 // Logo and branding
@@ -162,6 +169,11 @@ nav {
   }
 }
 
+main {
+  border: 1px solid white;
+  background-color: #afd181;
+}
+
 .grid {
   display: flex;
   flex-direction: row;
@@ -172,10 +184,10 @@ nav {
   max-width: 80%;
   height: 100%;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 50px;
   padding: 30px 0 30px;
   list-style: none;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 .grid-item {
@@ -183,19 +195,19 @@ nav {
   flex-direction: column;
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: 300px;
+  flex-basis: 280px;
   align-items: center;
   justify-content: center;
   border: 1px solid black;
   border-radius: 10%;
   position: relative;
-  height: 320px;
+  height: 300px;
   margin-right: 10px;
   // TODO get rid of margin-right on
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-size: 3rem;
   font-weight: 600;
   color: #ecf0f7;
-  background-color: white;
+  background-color: lightgray;
   cursor: pointer;
 }
