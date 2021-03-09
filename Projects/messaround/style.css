@@ -7,7 +7,9 @@
 }
 
 /* hides scroll bar while maintaining funtionality */
-body::-webkit-scrollbar {width: 0 !important}
+body::-webkit-scrollbar {
+  width: 0 !important;
+}
 
 html {
   font-family: "Roboto", sans-serif;
@@ -23,7 +25,7 @@ header {
   z-index: 1000;
 }
 
-.container {
+.nav-container {
   width: 100%;
   /* max-width adjusts the nav size */
   max-width: 200rem;
@@ -47,7 +49,7 @@ header {
   font-size: 1.6rem;
 }
 
-.nav .logo {
+.nav .brand-logo {
   font-size: 3.5rem;
   font-weight: bold;
 }
@@ -102,8 +104,8 @@ header {
   box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
 }
 
-.scrolling-active .logo{
-  content: url("./images/newlogo2.png");
+.scrolling-active .logo {
+  content: url("./images/scrollingLogo.png");
 }
 
 .scrolling-active .nav {
@@ -135,7 +137,7 @@ header {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url("images/SafariTours.jpg") center no-repeat;
+  background: url("images/safariToursLanding.jpg") center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -147,7 +149,7 @@ header {
   color: #292929;
 } */
 
-.grid {
+.feature-cards-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -162,7 +164,7 @@ header {
   list-style: none;
 }
 
-.grid-item {
+.feature-cards {
   display: flex;
   flex-direction: column;
   flex-grow: 0;
@@ -193,7 +195,7 @@ header {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.demo-content {
+.first-section {
   width: 100%;
   height: 200vh;
   background-color: #afd181;

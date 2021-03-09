@@ -4,20 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ATG Tours</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Fix Favicon size and resolution (make 16px16px currently a 512x512 ) -->
+    <link rel="shortcut icon" type="image/jpg" href="images/globeLogo.png" />
+    <!-- TODO: pick a font family / main font -->
     <script
       src="https://kit.fontawesome.com/1e753bb7bb.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header> 
-        
-      <div class="container">
+    <!-- Header element housing our navigation bar and their respective elements -->
+    <header>
+      <div class="nav-container">
         <nav class="nav">
-          <a href="index.html" class="logo"
-            ><img src="images/output-onlinepngtools (4).png" alt=""
+          <a href="index.html" class="brand-logo"
+            ><img src="images/globeLogo.png" alt=""
           /></a>
           <ul class="nav-list">
             <li>
@@ -33,19 +36,29 @@
               <a href="#" class="nav-link">Contact</a>
             </li>
           </ul>
+          <!-- cta = Call To Action -->
           <a href="#" id="nav-cta">Book now</a>
         </nav>
       </div>
     </header>
+
+    <!-- Landing Hero Page -->
     <section class="hero">
       <!-- <div class="hero-heading"><h1>Across The Globe Tours</h1></div> -->
-      <ul class="grid">
-        <li class="grid-item"><i class="fas fa-plane-departure"></i></li>
-        <li class="grid-item"><i class="fas fa-ship"></i></li>
-        <li class="grid-item"><i class="fas fa-star"></i></li>
+      <ul class="feature-cards-container">
+        <li class="feature-cards">
+          <i class="fas fa-plane-departure"></i>
+        </li>
+        <li class="feature-cards">
+          <i class="fas fa-ship"></i>
+        </li>
+        <li class="feature-cards">
+          <i class="fas fa-star"></i>
+        </li>
       </ul>
     </section>
-    <section class="demo-content"></section>
+    <!-- First content section under hero -->
+    <section class="first-section"></section>
 
     <script>
       window.addEventListener("scroll", function () {
