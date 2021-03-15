@@ -6,13 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ATG Tours</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Fix Favicon size and resolution (make 16px16px currently a 512x512 ) -->
-    <link rel="shortcut icon" type="image/jpg" href="images/globeLogo.png" />
-    <!-- TODO: pick a font family / main font -->
-    <script
+    <link rel="shortcut icon" type="image/jpg" href="images/Asset 2.svg" />
+    <!-- <script
       src="https://kit.fontawesome.com/1e753bb7bb.js"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
   </head>
   <body>
     <!-- Header element housing our navigation bar and their respective elements -->
@@ -20,7 +18,7 @@
       <div class="nav-container">
         <nav class="nav">
           <a href="index.html" class="brand-logo"
-            ><img src="images/globeLogo.png" alt=""
+            ><img src="images/Asset 2.svg" alt=""
           /></a>
           <ul class="nav-list">
             <li>
@@ -44,41 +42,53 @@
 
     <!-- Landing Hero Page -->
     <section class="hero">
-      <div class="card-section">
-        <div class="card">
+      <div class="hero-section">
+        <section class="booking">
+          <div class="container">
+            <h1 class="booking-message">Giving you that world class <br>experience that you deserve.</h1>
+            <form action="" class="form">
+              <div class="input-group">
+                <label for="destination" class="input-label">Where</label>
+                <input type="text" class="input" id="destination">
+              </div>
+              <div class="input-group">
+                <label for="check-in" class="input-label">Check in</label>
+                <input type="date" class="input" id="check-in">
+              </div>
+              <div class="input-group">
+                <label for="check-out" class="input-label">Check out</label>
+                <input type="date" class="input" id="check-out">
+              </div>
+              <div class="input-group">
+                <label for="guests" class="input-label">Guests</label>
+                <select id="guests" class="options">
+                  <option value="0">0</option>
+                  <option value="0">1</option>
+                  <option value="0">2</option>
+                  <option value="0">3</option>
+                  <option value="0">4</option>
+                  <option value="0">5</option>
+                  <option value="0">6</option>
+                </select>
+              </div>
+            </form>
+            <button type="submit" class="btn form-btn btn-green">Search
+
+            </button>
+          </div>
+        </section>
+        <!-- <div class="card">
           <div class="card-image__first">
             <a id="" href="#"></a>
           </div>
           <div class="card-content">
-            <h2 class="card-heading">Featured Tour!</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint libero explicabo ratione natus culpa dolorum ipsum praesentium ab nulla laudantium, commodi distinctio eos mollitia error.</p>
-            <a class="card-button" href="#">Learn More</a>
+            <h2 class="card-heading">Amber Fort</h2>
+            <p class="card-text">Amber Fort is also known as Amer Fort which is one of the most visited tourist attractions of Rajasthan as well as one of the renowned Historical Place of India.</p>
+            <a class="card-button" href="#">View Featured Tour</a>
           </div>
           <div class="space"></div>
         </div>
-      </div>
-      <!-- <div class="hero-heading"><h1>Across The Globe Tours</h1></div> -->
-      <!-- <ul class="feature-cards-container">
-        <li class="feature-cards">
-          <i class="fas fa-plane-departure"></i>
-        </li>
-        <li class="feature-cards">
-          <i class="fas fa-ship"></i>
-        </li>
-        <li class="feature-cards">
-          <i class="fas fa-star"></i>
-        </li>
-      </ul> -->
+      </div> -->
     </section>
-    <!-- First content section under hero -->
-    <section class="first-section"></section>
-
-    <script>
-      window.addEventListener("scroll", function () {
-        let header = document.querySelector("header");
-        let windowPosition = window.scrollY > 0;
-        header.classList.toggle("scrolling-active", windowPosition);
-      });
-    </script>
   </body>
 </html>

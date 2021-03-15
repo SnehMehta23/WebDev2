@@ -6,11 +6,6 @@
   box-sizing: border-box;
 }
 
-/* hides scroll bar while maintaining funtionality */
-body::-webkit-scrollbar {
-  width: 0 !important;
-}
-
 html {
   font-family: "Roboto", sans-serif;
   font-size: 10px;
@@ -24,6 +19,8 @@ header {
   transition: background-color 0.5s ease;
   z-index: 1000;
 }
+
+/* Navigation */
 
 .nav-container {
   width: 100%;
@@ -49,15 +46,15 @@ header {
   font-size: 1.6rem;
 }
 
-.nav .brand-logo {
-  font-size: 3.5rem;
-  font-weight: bold;
+.brand-logo {
+  height: 45px;
+  width: 45px;
 }
 
 .nav-list {
   list-style: none;
   display: flex;
-  background: #62C28D;
+  background: #62c28d;
   border-radius: 1rem;
   padding: 1rem 2rem;
 }
@@ -86,86 +83,113 @@ header {
 
 #nav-cta {
   display: inline-block;
-  background-color: #8281c7;
-  color: #fff;
+  background-color: #62c28d;
+  color: #000;
   padding: 1rem 2rem;
   border-radius: 2rem;
   transition: background-color 0.5s ease;
 }
 
 #nav-cta:hover {
-  background-color: #62C28D;
-  color: #423e61;
-}
-
-/*Apply styles after scroll*/
-.scrolling-active {
-  background-color: #292929;
-  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
-}
-
-.scrolling-active .logo {
-  content: url("./images/scrollingLogo.png");
-}
-
-.scrolling-active .nav {
-  height: 6.6rem;
-  border-bottom: #fff;
-}
-
-.scrolling-active .nav a {
-  color: #fff;
-}
-
-.scrolling-active #nav-cta {
   background-color: #8281c7;
   color: #fff;
 }
 
-.scrolling-active #nav-cta:hover {
-  background-color: #423e61;
-  /* add in some sort of affordance or indicator that you are hovering */
-}
-
-.scrolling-active .nav-link::after {
-  /* insert nav link affordance */
-}
-
-/*Apply styles after scroll end*/
-
-/* Hero Demo Content*/
+/* Hero Landing Page*/
 .hero {
+  /* border: 2px solid red; */
   width: 100%;
   height: 100vh;
   background: url("images/venice-gondolas-xlarge.webp") center no-repeat;
   background-size: cover;
   position: absolute;
-  /* border: 2px solid red; */
+  /* background-attachment: fixed; */
 }
 
-/* .hero-heading {
-  font-size: 3rem;
-  text-align: center;
-  padding-top: 14rem;
-  color: #292929;
-} */
+/* Booking section styles */
 
-.card-section {
+.booking {
+  /* border: 2px solid orange; */
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: -20rem;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.input-label {
+  display: flex;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: left;
+  margin: 0 0 3px;
+}
+
+.input {
+  outline: none;
+  border: 1px solid lightgray;
+  width: 100%;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: #a5a5a5;
+  letter-spacing: 2px;
+}
+
+.options {
+  outline: none;
+  border: 1px solid lightgray;
+  width: 100%;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: #a5a5a5;
+  letter-spacing: 2px;
+}
+
+.booking-message {
+  font-size: 3rem;
+  padding: 2rem 2rem 2rem 0rem;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.form-btn {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  float: right;
+}
+
+.btn-green {
+  background-color: #62c28d;
+}
+
+.hero-section {
+  /* border: 2px solid blue;  */
   max-width: 80%;
   text-align: center;
-  /* border: 2px solid blue;  */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* padding: 30px 30px; */
-  justify-content: flex-end;
+  padding: 30px 30px;
+  justify-content: space-between;
   height: 80%;
   align-items: center;
   margin: 0 auto;
   margin-top: 10rem;
 }
 
- .card {
+/* Content card */
+.card {
   /* border: 2px solid green; */
   position: relative;
   box-sizing: border-box;
@@ -177,10 +201,10 @@ header {
   width: 100%;
   height: auto;
   border-radius: 5px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, .2), 0 5px 15px rgba(0, 0, 0, .07);
-  transition: .6s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.07);
+  transition: 0.6s ease;
   background: #f9f9f9;
-  text-align: left; 
+  text-align: left;
 }
 .card-image__first {
   border-radius: 4px 4px 0 0;
@@ -188,53 +212,33 @@ header {
   display: block;
   height: 300px;
   background-size: cover;
-  /* 360x150 */
-  background: url("https://dummyimage.com/360x300/000/ffffff") 50% 50%;
- }
-
- .card-content {
-  padding:.3em 2em; 
+  /* 360x300 */
+  background: url("images/image_1614187211\ \(1\).webp");
+  /* focus or scale out to show full image */
 }
 
- .card-heading {
+.card-content {
+  padding: 0.3em 2em;
+}
+
+.card-heading {
   font-size: 21px;
   color: #505050;
   font-weight: 500;
-  line-height: 1.5; 
+  line-height: 1.5;
 }
 
- .card-text {
+.card-text {
   color: #606060;
   font-weight: 400;
   font-size: 14px !important;
   line-height: 1.5;
-  text-align: left !important; 
+  text-align: left !important;
   margin-bottom: 10px;
 }
- 
- .card-button,
-  a.card-button {
-   display: inline-block;
-   text-transform: capitalize;
-   cursor: pointer;
-   text-decoration: none;
-   line-height: 20px;
-   border-radius: 30px;
-   padding: 5px 20px;
-   background: #62C28D;
-   color: #fff;
-   font-weight: 500 !important;
-   font-size: 13px; 
-  }
- 
- .card-button,
- a.card-button:active {
-  box-shadow:0 2px 6px rgba(48,51,54,0.4), 0 0 3px rgba(0, 0, 0, .1);
-  transform: translateY(1px);
- }
- 
- .card-button-2nd,
- a.card-button-2nd {
+
+.card-button,
+a.card-button {
   display: inline-block;
   text-transform: capitalize;
   cursor: pointer;
@@ -242,70 +246,20 @@ header {
   line-height: 20px;
   border-radius: 30px;
   padding: 5px 20px;
-  background: #62C28D;
+  background: #8281c7;
   color: #fff;
   font-weight: 500 !important;
-  font-size: 13px; 
+  font-size: 13px;
 }
- 
- .card-button-2nd,
- a.card-button-2nd:active {
-  box-shadow:0 2px 6px rgba(48,51,54,0.4),
-             0 0 3px rgba(0, 0, 0, .1);
+
+.card-button,
+a.card-button:active {
+  box-shadow: 0 2px 6px rgba(48, 51, 54, 0.4), 0 0 3px rgba(0, 0, 0, 0.1);
   transform: translateY(1px);
- }
- 
- .space{
-  height:4vh; 
 }
 
-/* .feature-cards-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  max-width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  padding: 30px 0 30px;
-  list-style: none;
-} */
-
-.feature-cards {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 280px;
-  align-items: center;
-  justify-content: center;
-  /* border: 1px solid black; */
-  border-radius: 10%;
-  position: relative;
-  height: 300px;
-  margin-right: 10px;
-  margin-bottom: 30px;
-  font-size: 3rem;
-  font-weight: 600;
-  color: #62C28D;
-  background-color: #292929;
-  cursor: pointer;
+.space {
+  height: 4vh;
 }
-
-.hero::after {
-  content: "";
-  width: inherit;
-  height: inherit;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.first-section {
-  width: 100%;
-  height: 200vh;
-  background-color: #62C28D;
-}
-/* Hero end*/
+/* background for the other pages? */
+/* background: linear-gradient( #558d78,#62C28D, #8281c7); */
