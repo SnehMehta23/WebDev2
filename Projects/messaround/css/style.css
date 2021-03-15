@@ -28,6 +28,7 @@ header {
   max-width: 200rem;
   margin: 0 auto;
   padding: 0 1.5rem;
+  /* border: 2px solid red; */
 }
 
 .nav {
@@ -38,17 +39,22 @@ header {
   justify-content: space-between;
   /* border-bottom: 2px solid rgba(175, 209, 129, 1); */
   transition: height 0.5s ease;
+  /* border: 2px solid blue; */
 }
 
 .nav a {
   text-decoration: none;
   color: #000;
   font-size: 1.6rem;
+  /* border: 2px solid green; */
+
 }
 
 .brand-logo {
   height: 45px;
   width: 45px;
+  /* border: 2px solid orange; */
+
 }
 
 .nav-list {
@@ -57,11 +63,14 @@ header {
   background: #62c28d;
   border-radius: 1rem;
   padding: 1rem 2rem;
+  /* border: 2px solid red; */
+
 }
 
 .nav-link {
   margin: 0 2rem;
   position: relative;
+  
 }
 
 .nav-link::after {
@@ -88,6 +97,7 @@ header {
   padding: 1rem 2rem;
   border-radius: 2rem;
   transition: background-color 0.5s ease;
+  visibility: hidden;
 }
 
 #nav-cta:hover {
@@ -100,10 +110,32 @@ header {
   /* border: 2px solid red; */
   width: 100%;
   height: 100vh;
-  background: url("images/venice-gondolas-xlarge.webp") center no-repeat;
+  background: url("../images/landingPage/venice-gondolas-xlarge.webp") center no-repeat;
   background-size: cover;
   position: absolute;
   /* background-attachment: fixed; */
+}
+
+.title {
+  font-size: 5rem;
+  font-family: "Roboto";
+  text-align: left;
+  color:#62c28d;
+}
+
+span {
+  color: #000;
+}
+
+.subtitle {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.title-text{
+  margin-bottom: 4rem;
+  margin-top: -28rem;
+  /* display: block; */
 }
 
 /* Booking section styles */
@@ -153,7 +185,7 @@ header {
 }
 
 .booking-message {
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding: 2rem 2rem 2rem 0rem;
   text-align: left;
   line-height: 1.2;
@@ -213,7 +245,7 @@ header {
   height: 300px;
   background-size: cover;
   /* 360x300 */
-  background: url("images/image_1614187211\ \(1\).webp");
+  background: url("images/tourImages/amber-fort.webp");
   /* focus or scale out to show full image */
 }
 
@@ -260,6 +292,32 @@ a.card-button:active {
 
 .space {
   height: 4vh;
+}
+
+/* Mobile Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .nav a {
+    margin: 1rem;
+  }
+  .nav-list {
+    visibility: hidden;
+  }
+  #nav-cta {
+    visibility: visible;
+  }
+  .title-text {
+    margin-top: -12rem;
+  }
+
+  .title, .subtitle {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .title-text {
+    margin-top: -10rem;
+  }
 }
 /* background for the other pages? */
 /* background: linear-gradient( #558d78,#62C28D, #8281c7); */
