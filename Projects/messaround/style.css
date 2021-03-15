@@ -39,7 +39,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid rgba(175, 209, 129, 1);
+  /* border-bottom: 2px solid rgba(175, 209, 129, 1); */
   transition: height 0.5s ease;
 }
 
@@ -57,8 +57,8 @@ header {
 .nav-list {
   list-style: none;
   display: flex;
-  background: #afd181;
-  border-radius: 2rem;
+  background: #62C28D;
+  border-radius: 1rem;
   padding: 1rem 2rem;
 }
 
@@ -94,7 +94,7 @@ header {
 }
 
 #nav-cta:hover {
-  background-color: #afd181;
+  background-color: #62C28D;
   color: #423e61;
 }
 
@@ -137,9 +137,10 @@ header {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url("images/safariToursLanding.jpg") center no-repeat;
+  background: url("images/venice-gondolas-xlarge.webp") center no-repeat;
   background-size: cover;
-  position: relative;
+  position: absolute;
+  /* border: 2px solid red; */
 }
 
 /* .hero-heading {
@@ -149,24 +150,131 @@ header {
   color: #292929;
 } */
 
-.feature-cards-container {
+.card-section {
+  max-width: 80%;
+  text-align: center;
+  /* border: 2px solid blue;  */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* align-content: flex-start; */
+  /* padding: 30px 30px; */
+  justify-content: flex-end;
+  height: 80%;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+
+ .card {
+  /* border: 2px solid green; */
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  margin: 20px 1%;
+  min-width: 360px;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .2), 0 5px 15px rgba(0, 0, 0, .07);
+  transition: .6s ease;
+  background: #f9f9f9;
+  text-align: left; 
+}
+.card-image__first {
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 20px;
+  display: block;
+  height: 300px;
+  background-size: cover;
+  /* 360x150 */
+  background: url("https://dummyimage.com/360x300/000/ffffff") 50% 50%;
+ }
+
+ .card-content {
+  padding:.3em 2em; 
+}
+
+ .card-heading {
+  font-size: 21px;
+  color: #505050;
+  font-weight: 500;
+  line-height: 1.5; 
+}
+
+ .card-text {
+  color: #606060;
+  font-weight: 400;
+  font-size: 14px !important;
+  line-height: 1.5;
+  text-align: left !important; 
+  margin-bottom: 10px;
+}
+ 
+ .card-button,
+  a.card-button {
+   display: inline-block;
+   text-transform: capitalize;
+   cursor: pointer;
+   text-decoration: none;
+   line-height: 20px;
+   border-radius: 30px;
+   padding: 5px 20px;
+   background: #62C28D;
+   color: #fff;
+   font-weight: 500 !important;
+   font-size: 13px; 
+  }
+ 
+ .card-button,
+ a.card-button:active {
+  box-shadow:0 2px 6px rgba(48,51,54,0.4), 0 0 3px rgba(0, 0, 0, .1);
+  transform: translateY(1px);
+ }
+ 
+ .card-button-2nd,
+ a.card-button-2nd {
+  display: inline-block;
+  text-transform: capitalize;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 20px;
+  border-radius: 30px;
+  padding: 5px 20px;
+  background: #62C28D;
+  color: #fff;
+  font-weight: 500 !important;
+  font-size: 13px; 
+}
+ 
+ .card-button-2nd,
+ a.card-button-2nd:active {
+  box-shadow:0 2px 6px rgba(48,51,54,0.4),
+             0 0 3px rgba(0, 0, 0, .1);
+  transform: translateY(1px);
+ }
+ 
+ .space{
+  height:4vh; 
+}
+
+/* .feature-cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   max-width: 80%;
   height: 100%;
   margin: 0 auto;
-  /* margin-top: 50px; */
   padding: 30px 0 30px;
   list-style: none;
-}
+} */
 
 .feature-cards {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 280px;
@@ -180,7 +288,7 @@ header {
   margin-bottom: 30px;
   font-size: 3rem;
   font-weight: 600;
-  color: #afd181;
+  color: #62C28D;
   background-color: #292929;
   cursor: pointer;
 }
@@ -198,6 +306,6 @@ header {
 .first-section {
   width: 100%;
   height: 200vh;
-  background-color: #afd181;
+  background-color: #62C28D;
 }
 /* Hero end*/
