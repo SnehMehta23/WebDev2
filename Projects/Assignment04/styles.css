@@ -1,0 +1,71 @@
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.content,
+.overlay,
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: white;
+  /* text-decoration: none; */
+}
+
+a:hover {
+  color: rgb(102, 102, 226);
+}
+
+/* The .content element will be placed above the others. */
+.content {
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 2rem;
+  padding: 0.5rem;
+  position: absolute;
+  top: 70%;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  background: linear-gradient(to right, hsl(11, 85%, 42%), hsl(25, 73%, 50%));
+  font-family: "Limelight", cursive;
+  opacity: 0.7;
+}
+
+.overlay {
+  z-index: 15;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.video {
+  z-index: 10;
+}
+
+/* not really a thing to style html audio tags usually use a custom audio player library or something */
+
+audio {
+  cursor: pointer;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
