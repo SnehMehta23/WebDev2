@@ -304,6 +304,9 @@ body::-webkit-scrollbar {
     flex-direction: column;
     align-items: center;
   }
+  .contact-form {
+    top: 65% !important;
+  }
 }
 
 @media screen and (max-width: 1600px) {
