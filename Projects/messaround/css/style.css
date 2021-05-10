@@ -578,7 +578,7 @@ body::-webkit-scrollbar {
   position: relative;
   height: 400px;
   overflow: hidden;
-  background: url(../images/bannerImage.jpg) no-repeat center;
+  background: url(../images/tourImages/bannerImage.jpg) no-repeat center;
   background-size: cover;
 }
 
