@@ -1,24 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/jpg" href="images/landingPage/Asset 2.svg" />
-    <title>ATG Tours || Book Tour Packages </title>
-</head>
-<body>
-    <div class="internal-nav">
-        <label class="internal-hamburger"for="toggle-internal-hamburger">&#9776</label>
-        <input type="checkbox" id="toggle-internal-hamburger">
-        <div class="menu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="images/landingPage/Asset 2.svg"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <title>ATG Tours || Book Tour Packages</title>
+  </head>
+  <body>
+    <header class="header-internal">
+      <h1 class="logo">ATG Tours</h1>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+
+      <nav class="internal-nav">
+        <ul>
+          <li>
             <a href="index.html">Home</a>
-            <a href="destinations.html">Destinations</a>
-            <a href="#">Cruises</a>
-            <a href="#">VIP</a>
-            <a href="contact.html"><span class="contact-span">Contact Us</span></a>
-        </div>
+          </li>
+          <li>
+            <a href="./destinations.html">Destinations</a>
+          </li>
+          <li>
+            <a href="#">Crusies</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
+
+    <div class="seperator2"></div>
+
+    <div class="hero-image">
+      <div class="banner-container">
+        <h1 class="banner-title"><span>ACROSS THE GLOBE</span></h1>
+        <span class="banner-span">PLAN YOUR TRIP</span>
+        <a class="banner-button" href="#">BUY NOW</a>
+      </div>
     </div>
-</body>
+
+    <div class="featured-trips-container">
+      <h2 class="featured-title">Our Featured Tours</h2>
+      <h3 class="featured-subtitle">
+        A Ready-to-Book, Exclusive Itinerary Created for You
+      </h3>
+      <div class="featured-container">
+        <div class="card">
+          <div class="card-image__first">
+            <a id="" href="#"></a>
+          </div>
+          <div class="card-content">
+            <h2 class="card-heading">Amber Fort</h2>
+            <p class="card-text">
+              Amber Fort is also known as Amer Fort which is one of the most
+              visited tourist attractions of Rajasthan as well as one of the
+              renowned Historical Place of India. You will be amazed by the
+              awesome route and architecture of Amer Fort. This amazing fort
+              comprises a series of four courtyards, halls, palaces, and
+              gardens.
+            </p>
+            <a class="card-button" href="./tourpage.html">View Featured Tour</a>
+          </div>
+          <div class="space"></div>
+        </div>
+
+        <div class="card">
+          <div class="card-image__second">
+            <a id="" href="#"></a>
+          </div>
+          <div class="card-content">
+            <h2 class="card-heading">Jordan, Egypt & The Holy Land</h2>
+            <p class="card-text">
+              Be ready for a treasure hunt and get to know about the lives lived
+              centuries ago in this combined tour of Egypt, Jordan, and the Holy
+              Land. Discover each country’s unique charm beyond the famous
+              sites. Join us on a journey through the neighbouring countries
+              where the shadows of great history set.
+            </p>
+            <a class="card-button" href="#">View Featured Tour</a>
+          </div>
+          <div class="space"></div>
+        </div>
+
+        <div class="card">
+          <div class="card-image__third">
+            <a id="" href="#"></a>
+          </div>
+          <div class="card-content">
+            <h2 class="card-heading">Arctic Vistas & Northern Lights</h2>
+            <p class="card-text">
+              Immense, pristine, virtually uninhabited - East Greenland’s
+              Scoresby Sund is Arctic backwoods of divine quality. This
+              captivating northern light cruise starts and finishes in
+              Reykjavík, Iceland. Across the Denmark Strait, we discover the
+              spectacular Scoresby Sund fjord complex in East Greenland.
+            </p>
+            <a class="card-button" href="#">View Featured Tour</a>
+          </div>
+          <div class="space"></div>
+        </div>
+
+        <div class="card">
+          <div class="card-image__fourth">
+            <a id="" href="#"></a>
+          </div>
+          <div class="card-content">
+            <h2 class="card-heading">Rio de Janeiro & Iguazu</h2>
+            <p class="card-text">
+              Our tour package let you enjoy 3 nights in Rio de Janeiro, with
+              the splendid visit to the city, Sugar Loaf, Christ the Redeemer,
+              and Corcovado. After that, take a flight to Puerto Iguazu, to
+              enjoy lively 3 nights and visit both sides of the fantastic Iguazu
+              Falls.
+            </p>
+            <a class="card-button" href="#">View Featured Tour</a>
+          </div>
+          <div class="space"></div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .tours-carousel-container {
+        padding: 2rem;
+        background-color: lightgray;
+        border-radius: 30px;
+        margin: 2rem;
+      }
+
+      .tours-carousel-container-text {
+        font-size: 24px;
+      }
+
+      .tours-carousel-container img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      :root {
+        --swiper-theme-color: #fff;
+      }
+
+      .swiper-slide:hover {
+        transition: 250ms all;
+        transform: scale(1.2);
+        z-index: 1;
+      }
+
+      .swiper-slide:first-child:hover {
+        margin: 0 30px;
+      }
+
+      .swiper-slide:last-child:hover {
+        margin: 0 -30px;
+      }
+
+      .swiper-wrapper {
+        padding: 20px 0;
+      }
+    </style>
+
+    <div class="tours-carousel-container">
+      <h1 class="tours-carousel-container-text">
+        Find Your Perfect Travel Destination
+      </h1>
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/tourImages/1.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/tourImages/2.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/tourImages/3.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/tourImages/4.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/tourImages/5.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/tourImages/6.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/tourImages/7.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/tourImages/8.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/tourImages/9.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/tourImages/10.jpg" alt="" />
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 6,
+        spaceBetween: 10,
+        slidesPerGroup: 2,
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          // when window width is >= 480px
+          500: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          // when window width is >= 640px
+          1000: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+          },
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
 </html>
